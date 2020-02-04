@@ -1,0 +1,23 @@
+.top_bar {
+	
+	height: 50px;
+	/*border: 1px solid black;*/
+
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0px auto;
+	padding: 5px auto;
+
+	overflow: hidden;
+
+	display: flex;
+	justify-content: space-between;
+
+	/*border-bottom: 2px solid #FAEE01;*/
+	/*box-shadow: -2px 2px 2px 2px;*/
+
+}
+
+

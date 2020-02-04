@@ -1,0 +1,23 @@
+
+.page {
+
+		width: 		100%;
+		min-width: 800px;
+		/*margin-left: 	2.5%;*/
+		margin-top: 	5px;
+		margin-bottom: 10px;
+
+		/*background-color: var(--background_color_page);*/
+
+		/*box-shadow: 2px 5px 10px 1px var(--shadown_color_page);*/
+
+		/*border: 5px solid rgba(255,255,255,.7);*/
+		/*border: 5px solid white;*/
+		/*border-style: inset;*/
+
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:600&display=swap');
+
+:root {
+
+	--text_color_body: white;
+	--background_color_page: rgba(93, 130, 209,.9);
+	/*--background_color_page: rgba(81, 97, 103,.6);*/
+	--shadown_color_page: #EFDFD0;
+	--background_color_body: #FAEBD7; 
+	--time_color: #fff;
+	/*--menu_bg_color: rgb(250, 238, 1);*/
+	/*--menu_bg_color: rgba(200,200,200,.2);*/
+	--menu_bg_color: rgba(222, 206, 190,.9);
+	--menu_txt_color: rgba(0,0,0,.8);
+	/*--background_color_body: rgba(4,127,199,100); */
+	
+	/*
+	-------------------------
+	:	Color guideline:	:
+	-------------------------
+
+	#7B68EE : MediumSlateBlue
+	#FAEBD7 : AntiqueWhite
+	#F5F5F5 : WhiteSmoke;
+	*/
+}
+
+*,
+body  {
+	
+	margin: 0;
+	padding: 0;
+	color: var(--text_color_body);
+	
+	/*background-color: var(--background_color_body);*/
+
+	box-sizing: border-box;
+
+}
+
+body {
+	background-image: linear-gradient(to bottom, var(--background_color_page),white, var(--background_color_page));
+}

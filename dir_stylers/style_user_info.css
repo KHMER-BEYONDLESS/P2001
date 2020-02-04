@@ -1,0 +1,124 @@
+		.center {
+			position: relative;
+			width: 90%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			height: 250px;
+			margin: 0 auto;
+		}
+
+		.center .text {
+			width: 55%;
+			background: rgb(242,117,46);
+			/*background: rgb(133, 162, 221);*/
+			height: 250px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			z-index: 1
+
+		}
+
+		.center .image::after {
+			content: '';
+			position: absolute;
+			border-top: calc(250px/2) solid rgb(242,117,46);
+			border-right: calc(250px/2) solid transparent;
+			border-bottom: calc(250px/2) solid rgb(242,117,46);
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+
+		.text h1 {
+			margin: 20px;
+			color: rgb(218,218,218);
+			opacity: 0;
+			animation: text 15s infinite;
+			position: absolute;
+			top: 10px;
+
+		}
+
+		.text h1:nth-child(2) {
+			animation-delay: 5s;
+		}
+
+		.text h1:nth-child(3) {
+			animation-delay: 10s;
+		}
+
+		.text p {
+			margin-top: 60px;
+			padding: 25px 40px;
+			letter-spacing: 1px;
+			font-weight: lighter;
+		}
+
+		.image {
+			width: 35%;
+			overflow: hidden;
+			position: relative;
+			height: 250px;
+		}
+
+
+		div.text::after {
+			content: '';
+			position: absolute;
+			width: 55%;
+			height: 220px;
+			/*background-color: rgb(133, 162, 221);*/
+			background-color: black;
+			z-index: -1;
+			border-radius: 0 0 100px 0;
+		}
+
+		
+		.image img{
+			position: absolute;
+			top: 20%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			min-width: 100%;
+			min-height: 100%;
+			opacity: 0;
+			animation: slider 15s infinite;
+		}
+		.image img:nth-child(1){
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			transform: translate(0%,0%);
+			}
+		
+
+		.image img:nth-child(2) {
+			animation-delay: 5s;
+		}
+
+		.image img:nth-child(3) {
+			animation-delay: 10s;
+			top: 60%;
+		}
+
+		@keyframes slider {
+			0%{opacity: 0;}
+			5%{opacity: 1;}
+			33.33%{opacity: 1;}
+			38%{opacity: 0;}
+			100%{opacity: 0;}
+
+		}
+
+		@keyframes text {
+			0%{opacity: 0;}
+			5%{opacity: 0;}
+			10.33%{opacity: 1;}
+			25.33%{opacity: 1;}
+			32.33%{opacity: 0;}
+			100%{opacity: 0;}
+
+		}

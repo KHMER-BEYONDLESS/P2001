@@ -1,0 +1,107 @@
+.top_two {
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.top_two {
+	/*overflow: hidden;*/
+	/*background: #2f3a4a;*/
+	/*background: white;*/
+	line-height: 40px;
+
+	/*border: 1px solid black;*/
+}
+
+.top_two .top_container {
+	/*float: right;*/
+	/*margin-right: 100px;*/
+	/*margin-top: 10px;*/
+	margin: 5px;
+	padding: 0px ;
+
+	/*border: 2px solid red;*/
+
+	/*background-color: white;*/
+}
+
+.top_two .top_container p {
+
+	/*border: .1px solid green;*/
+
+	display: inline-block;
+	justify-content: space-between;
+	padding: 0;
+	margin: 20px 10px;
+	margin-bottom: 25px;
+
+}
+
+.top_two .top_container p:nth-child(3) {
+	margin-top: 20px;
+}
+
+.top_two input[type=text],
+input[type=password]{
+
+	width: 150px;
+	transition: all .3s ease 0s;
+	background: #fff;
+	font-size: 15px;
+	transform: translateY(5px);
+}
+
+.top_two input[type=text]:focus,
+.top_two input[type=password]:focus{
+
+	transform: translateY(5px);
+	font-size: 20px;
+}
+
+.top_two .top_container button {
+	/*float: right;*/
+	/*padding: 6px;*/
+	/*margin-top: 8px;*/
+	margin-right: 0px;
+	margin-left: 2px;
+	/*background: #2196f3;*/
+	background: rgba(0,136,169,1);
+	font-size: 17px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease 0s;
+	transform: translateY(2px);
+
+	border-radius: 20px;
+}
+
+.top_two .top_container button:focus,
+.top_two .top_container button:hover{
+	/*background: rgba(1,1,255,.4);*/
+
+	background: rgb(7, 116, 249);
+
+	transform: translate(-1px,-1px);
+}
+
+#login_btn::before {
+	content: 'Sign In';
+}
+
+
+.top_container button {
+	margin: 0px auto;
+	margin-left: 20px;
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all .3s ease 0s;
+
+	overflow: 	hidden;	
+}

@@ -1,0 +1,121 @@
+.top_one {
+
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid black;*/
+
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.social_icon {
+
+	width: 30px;
+	height: 30px;
+
+	/*padding: 5px;*/
+	/*margin: 5px;*/
+	/*border: 2px solid red;*/
+
+  	transition: all .5s ease 0s;
+
+}
+
+#div_social {
+	padding-left: 10px;
+}
+#vertical_bar {
+	display: inline-block;
+
+	width: 1px;
+	background-color: black;
+	margin: 2px 2px;
+}
+
+.fa-facebook-official,
+.fa-facebook {
+  /*padding-top: 3px;*/
+  background: #3B5998;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  /*font-size: .9rem;*/
+  
+  transition: all .5s ease 0s;
+}
+
+.fa-twitter-square,
+.fa-twitter {
+  /*padding-top: 3px;*/
+  background: #55ACEE;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  /*font-size: .9rem;*/
+
+  transition: all .5s ease 0s;
+}
+
+.social_icon:hover,
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-line:hover {
+	transform: scale(1.1);
+}
+
+.top_one span {
+
+	/*color: black;*/
+}
+
+.top_one #div_time {
+	padding: 0;
+	margin: 0;
+	width: 400px;
+	/*border: 1px solid red;*/
+	color: var(--time_color);
+	text-align: center;
+}
+
+.top_one #div_lang {
+	padding: 0;
+	margin: auto 5px;
+	width: 100px;
+	/*border: 1px solid pink;*/
+	margin-left: 10px;
+	margin-right: 10px;
+
+	text-align: center;
+
+}
+
+#lang:nth-child(1) {
+	background-color: red;
+}
+
+#lang:nth-child(3) {
+	background-color: blue;
+}
+
+.top_one #div_lang span {
+	cursor: pointer;
+	padding: 5px 5px;
+	margin: 5px 5px;
+}
+
+.top_one #div_lang span {
+	transition: transform .5s ease 0s;
+}
+
+.top_one1 #div_lang span:hover{
+
+	/*transform: scale(2.5);*/
+}
+
+.top_one #div_lang span:hover {
+	font-size: 1.1rem;
+	color: darkred;
+}

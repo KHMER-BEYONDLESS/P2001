@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+	<title>CSS - menu - nav bar </title>
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> -->
+	<!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
+ 	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<!-- <script src="https://cdnjs.couldflare.com/ajax/libs/vue/1.0.16/vue.js"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+	<script src="dir_scripts/libs_vue.js"></script>
+	<script src="dir_scripts/script_vue.js"></script>
+	<script src="dir_scripts/script_time.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="dir_stylers/styles.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_page.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_top_bar.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_top_one.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_top_two.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_header.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_main.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_sliders.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_zoomer.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_footer.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_user_info.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_signup.css">
+	<link rel="stylesheet" type="text/css" href="dir_stylers/style_copyright.css">
+
+</head>
+
+<body id="app" onload='display_ct();'>
+<!-- <body> -->
+	
+	<div class="page">
+
+		<div class="top_bar">
+			<div class="top_one">
+				<div id="div_time">
+					<span id="cur_time"></span>
+				</div>
+				<div id="vertical_bar"></div>
+				<div id="div_lang">
+					<span id="lang" key="en">EN</span>
+					<div id="vertical_bar"></div>
+					<span id="lang" key="kh">KH</span>
+				</div>
+				<div id="vertical_bar"></div>
+				<div id="div_social">
+						<a href="https://web.facebook.com/home" target="_blank" class="social_icon fa fa-facebook-official"></a>
+					 	<div id="vertical_bar"></div>
+					 	<a href="https://twitter.com/home" target="_blank" class="social_icon fa fa-twitter-square"></a>
+					
+				</div>
+			</div>
+			<div class="top_two">
+				<div class="top_container">
+					<form>
+						<p><input type="text" placeholder="User Name" name="userid"></p>
+						<p><input type="password" placeholder="Password" name="password"></p>
+						<p><button type="submit"><span id="login_btn"></span></button></p>
+					</form>
+				</div>
+			</div>
+		</div>
+		<header id="navbar" class="sticky_header">
+			<div class="logo logo_template1"><img src="dir_imgs/logo_50_50.jpg" alt="logo"></div>
+			<nav>
+				<ul class="nav__links">
+					<li class="active btn_template_1" ><a href="index.html" id="home">HOME</a></li>
+					<li class="btn_template_1"><a href="page1.html" target="_blank" id="page1">PAGE 1</a></li>
+					<li class="btn_template_1"><a href="page2.html" target="_blank" id="page2">PAGE 2</a></li>
+					<li class="btn_template_1"><a href="page3.html" target="_blank" id="page3">PAGE 3</a></li>
+					<li class="btn_template_1"><a href="page4.html" target="_blank" id="page4">PAGE 4</a></li>
+					<li class="btn_template_1"><a href="about.html" target="_blank" id="aboutus">ABOUT US</li>
+<!-- 
+					<li v-for="component in componentsArray">
+						<a @click="swapComponent(component)">{{ component }}</a>
+					</li> -->
+
+				</ul>
+			</nav>
+			<a class="cta" href="#">
+				<button class="join_now" id ="btn_join" >JOIN NOW</button>
+			</a>
+		</header>
+		<main>
+			<div class="sliders" id="container_sliders">
+				<div class="content">
+					<img src="dir_imgs/slide1_v1.3.png">
+					<img src="dir_imgs/slide2_v1.3.png">
+					<img src="dir_imgs/slide3_v1.3.png">
+					<img src="dir_imgs/slide4_v1.3.png">
+					<img src="dir_imgs/slide1_v1.3.png">
+				</div>
+			</div>
+
+			<div class="zoomer box1" id="container_zoomers">
+				<div class="img_sliders">
+					<div class="zoom_sliders">
+						<i><span></span><img src="dir_imgs/slide1_v1.3.png" alt="image slider 1"></i>
+						<i><span></span><img src="dir_imgs/slide2_v1.3.png" alt="image slider 2"><span></span></i>
+						<i><span></span><img src="dir_imgs/slide3_v1.3.png" alt="image slider 3"><span></span></i>
+						<i><span></span><img src="dir_imgs/slide4_v1.3.png" alt="image slider 4"><span></span></i>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container_signup signup-form display_hide" name="signup_div">
+				<form class="" action="index.html" method="post">
+					<h1>Join US</h1>
+					<input type="text" placeholder="Full Name" class="txtb">
+					<input type="email" placeholder="Email" class="txtb">
+					<input type="password" placeholder="Password" class="txtb">
+					<input type="submit" value="Create Account" class="signup-btn" id="btn_signup">
+
+					<a href="index.html">Already have one?</a>
+				</form>
+			</div>
+
+		</main>
+		<footer>
+			<nav>
+				<ul class="bottom__links">
+					<li class="btn_template_1"><label for="aboutus">ABOUT US</a></li>
+					<li class="btn_template_1"><label for="page4">PAGE 4</a></li>
+					<li class="btn_template_1"><label for="page3">PAGE 3</a></li>
+					<li class="btn_template_1"><label for="page2">PAGE 2</a></li>
+					<li class="btn_template_1"><label for="page1">PAGE 1</a></li>
+					<li class="active btn_template_1"><label for="home">HOME</a></li>					
+				</ul>
+			</nav>
+			<div class="center">
+				<div class="text">
+					<h1>Banks Information</h1>
+					<h1>Contact Us Information</h1>
+					<h1>Partners Information</h1>
+					<p>This information will help and lead us to keep touch with you anytime, anywhere. And we will bring all latest entertainments platforms to you. This information will help and lead us to keep touch with you anytime, anywhere. And we will bring all latest entertainments platforms to you.</p>
+				</div>
+
+				<div class="image">
+					<img src="dir_imgs/bank_account3.png" alt="">
+					<img src="dir_imgs/contact_us2.jpg" alt="">
+					<img src="dir_imgs/partner_info.jpg" alt="">
+				</div>
+			</div>
+			<div class="copy__right">
+				<p>Copyright © <span></span> by MND. All Rights Reserved.</p>
+			</div>
+		</footer>
+	</div>
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+	<!-- <script src="https://unpkg.com/vuex"></script> -->
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+
+<script>
+		$(document).ready(function(){
+		  
+			
+			$('#btn_join').on('click', function(){
+    		
+    		
+    			$('.signup-form').removeClass('display_hide');
+				$('.container_zoomers').addClass('display_hide');
+				$('.container_sliders').addClass('display_hide');	    
+
+		  });
+
+		$(".signup-form #btn_signup").click(function(){
+		  	
+		    $(".signup-form").addClass("display_hide");
+
+				$('.container_zoomers').removeClass('display_hide');
+				$('.container_sliders').removeClass('display_hide');	    
+		    
+		  });
+
+		});
+	</script>
+
+</body>
+</html>
